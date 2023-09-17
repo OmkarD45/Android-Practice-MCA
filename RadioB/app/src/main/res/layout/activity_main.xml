@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+    <TextView
+        android:id="@+id/txtv1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Radio Button"
+        android:textSize="30dp"
+        android:textColor="#FF3700B3"
+        android:layout_marginLeft="20sp"/>
+
+
+    <RadioGroup
+        android:id="@+id/rbgroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+
+        <RadioButton
+            android:id="@+id/rb1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Granttable"
+            android:textSize="25dp"
+        />
+
+        <RadioButton
+            android:id="@+id/rb2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Granttable"
+            android:textSize="25dp"
+        />
+    />
+    <Button
+        android:id="@+id/btnRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="50sp"
+        android:text="check even odd"
+        android:background="@color/black"/>
+
+</LinearLayout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    tools:context=".MainActivity">
+    <TextView
+        android:id="@+id/firstNumberLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter First Number:"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="8dp"/>
+    <EditText
+        android:id="@+id/firstNumberEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/firstNumberLabel"
+        android:layout_alignBaseline="@+id/firstNumberLabel"
+        android:hint="Enter the first number"/>
+    <TextView
+        android:id="@+id/secondNumberLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter Second Number:"
+        android:layout_below="@+id/firstNumberLabel"
+        android:layout_alignStart="@+id/firstNumberLabel"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"/>
+    <EditText
+        android:id="@+id/secondNumberEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/secondNumberLabel"
+        android:layout_alignBaseline="@+id/secondNumberLabel"
+        android:hint="Enter the second number"/>
+    <Button
+        android:id="@+id/multiplyButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Multiply"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/secondNumberLabel"
+        android:layout_marginTop="16dp"/>
+    <TextView
+        android:id="@+id/resultTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/multiplyButton"
+        android:layout_marginTop="16dp"/>
+</RelativeLayout>
